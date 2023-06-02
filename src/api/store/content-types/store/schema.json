@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stores",
+  "info": {
+    "singularName": "store",
+    "pluralName": "stores",
+    "displayName": "Store",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "store_id": {
+      "type": "customField",
+      "regex": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+      "customField": "plugin::field-uuid.uuid"
+    },
+    "store_name": {
+      "type": "text"
+    },
+    "store_description": {
+      "type": "text"
+    },
+    "store_image": {
+      "type": "string"
+    },
+    "store_shipping": {
+      "type": "text"
+    },
+    "store_phone": {
+      "type": "biginteger"
+    },
+    "store_instagram": {
+      "type": "text"
+    },
+    "store_facebook": {
+      "type": "text"
+    },
+    "store_tiktok": {
+      "type": "text"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "store"
+    }
+  }
+}

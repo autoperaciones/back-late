@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product_id": {
+      "type": "customField",
+      "regex": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+      "customField": "plugin::field-uuid.uuid"
+    },
+    "product_name": {
+      "type": "text"
+    },
+    "product_description_1": {
+      "type": "text"
+    },
+    "product_description_2": {
+      "type": "text"
+    },
+    "product_image_1": {
+      "type": "text"
+    },
+    "product_image_2": {
+      "type": "text"
+    },
+    "product_image_3": {
+      "type": "text"
+    },
+    "product_category": {
+      "type": "enumeration",
+      "enum": [
+        "Serenatas",
+        "Flores y Arreglos",
+        "Anchetas y Desayunos Sorpresas",
+        "Pastelería",
+        "Vinos y Licores",
+        "Joyas y Accesorios",
+        "Ropa"
+      ]
+    },
+    "product_gross_value": {
+      "type": "biginteger"
+    },
+    "product_tx_value": {
+      "type": "biginteger"
+    },
+    "product_value": {
+      "type": "biginteger"
+    },
+    "product_available": {
+      "type": "boolean"
+    },
+    "ipromos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::ipromo.ipromo",
+      "inversedBy": "products"
+    },
+    "occasions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::occasion.occasion",
+      "inversedBy": "products"
+    },
+    "store": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::store.store",
+      "inversedBy": "products"
+    }
+  }
+}

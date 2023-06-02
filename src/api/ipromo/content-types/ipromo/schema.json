@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ipromos",
+  "info": {
+    "singularName": "ipromo",
+    "pluralName": "ipromos",
+    "displayName": "Ipromo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ipromo_id": {
+      "type": "customField",
+      "regex": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+      "customField": "plugin::field-uuid.uuid"
+    },
+    "ipromo_name": {
+      "type": "string"
+    },
+    "ipromo_description": {
+      "type": "text"
+    },
+    "ipromo_image": {
+      "type": "text"
+    },
+    "ipromo_instagram": {
+      "type": "text"
+    },
+    "ipromo_facebook": {
+      "type": "text"
+    },
+    "ipromo_tiktok": {
+      "type": "text"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "mappedBy": "ipromos"
+    }
+  }
+}

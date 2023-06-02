@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * prueba service
+ * ipromo service
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::prueba.prueba');
+module.exports = createCoreService('api::ipromo.ipromo');

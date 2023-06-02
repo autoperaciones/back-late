@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "occasions",
+  "info": {
+    "singularName": "occasion",
+    "pluralName": "occasions",
+    "displayName": "Occasion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "occasion_name": {
+      "type": "string",
+      "required": true
+    },
+    "occasion_id": {
+      "type": "customField",
+      "regex": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+      "required": false,
+      "customField": "plugin::field-uuid.uuid"
+    }
+  }
+}

@@ -10013,6 +10013,13 @@ std-env@^3.0.1:
   resolved "https://registry.npmjs.org/std-env/-/std-env-3.3.1.tgz"
   integrity sha512-3H20QlwQsSm2OvAxWIYhs+j01MzzqwMwGiiO1NQaJYZgJZFPuAbf95/DiKRBSTYIJ2FeGUc+B/6mPGcWP9dO3Q==
 
+strapi-auto-uuid@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/strapi-auto-uuid/-/strapi-auto-uuid-0.0.7.tgz#49979db07c01d0aa37abad8c93d787cc6a3bca48"
+  integrity sha512-5Y+hAT3v8CYca5fh0qE1xltqTy+uUlVCt2YzDZg5Gy1UEH2Elf5Gl9jtipEPdXOorTl25KMfdeXGKmHjOiZqBw==
+  dependencies:
+    uuid "^9.0.0"
+
 stream-chain@2.2.5, stream-chain@^2.2.5:
   version "2.2.5"
   resolved "https://registry.npmjs.org/stream-chain/-/stream-chain-2.2.5.tgz"

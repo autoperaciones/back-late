@@ -45,7 +45,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product",
-      "mappedBy": "store"
+      "mappedBy": "store_name"
     }
   }
 }

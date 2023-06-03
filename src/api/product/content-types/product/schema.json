@@ -65,13 +65,13 @@
       "target": "api::ipromo.ipromo",
       "inversedBy": "products"
     },
-    "occasions": {
+    "occasions_name": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::occasion.occasion",
       "inversedBy": "products"
     },
-    "store": {
+    "store_name": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::store.store",

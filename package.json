@@ -1,5 +1,5 @@
 {
-  "name": "strapi",
+  "name": "be-late",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -17,6 +17,7 @@
     "@strapi/provider-upload-cloudinary": "4.10.7",
     "@strapi/strapi": "4.10.7",
     "pg": "8.8.0",
+    "pg-connection-string": "^2.6.0",
     "strapi-auto-uuid": "^0.0.7"
   },
   "author": {

@@ -71,7 +71,7 @@
       "target": "api::occasion.occasion",
       "inversedBy": "products"
     },
-    "store_name": {
+    "store": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::store.store",

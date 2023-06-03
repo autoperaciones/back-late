@@ -18,13 +18,13 @@
       "customField": "plugin::field-uuid.uuid"
     },
     "store_name": {
-      "type": "text"
+      "type": "string"
     },
     "store_description": {
       "type": "text"
     },
     "store_image": {
-      "type": "string"
+      "type": "text"
     },
     "store_shipping": {
       "type": "text"
@@ -45,7 +45,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product",
-      "mappedBy": "store_name"
+      "mappedBy": "store"
     }
   }
 }

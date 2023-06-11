@@ -4,7 +4,8 @@
   "info": {
     "singularName": "occasion",
     "pluralName": "occasions",
-    "displayName": "Occasion"
+    "displayName": "Occasion",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -17,13 +18,28 @@
       "customField": "plugin::field-uuid.uuid"
     },
     "occasion_name": {
-      "type": "text"
+      "type": "text",
+      "required": true,
+      "unique": true
     },
     "products": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::product.product",
       "mappedBy": "occasions_name"
+    },
+    "category": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "activo": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "occasion_date": {
+      "type": "date"
     }
   }
 }

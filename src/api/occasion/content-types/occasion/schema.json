@@ -28,18 +28,22 @@
       "target": "api::product.product",
       "mappedBy": "occasions_name"
     },
-    "category": {
+    "occasion_category": {
       "type": "boolean",
       "default": true,
       "required": true
     },
-    "activo": {
+    "occasion_activo": {
       "type": "boolean",
       "default": true,
       "required": true
     },
     "occasion_date": {
       "type": "date"
+    },
+    "occasion_img": {
+      "type": "text",
+      "required": true
     }
   }
 }

@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "page_description": {
+      "type": "text",
+      "required": true
+    },
+    "seo_title": {
+      "type": "string",
+      "required": true
+    },
+    "seo_ogtitle": {
+      "type": "string",
+      "required": true
+    },
+    "seo_description": {
+      "type": "text",
+      "required": true
+    },
+    "seo_ogdescription": {
+      "type": "text",
+      "required": true
+    },
+    "seo_ogimage": {
+      "type": "text",
+      "required": false
+    }
+  }
+}

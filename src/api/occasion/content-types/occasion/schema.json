@@ -44,6 +44,9 @@
     "occasion_img": {
       "type": "text",
       "required": true
+    },
+    "occassion_meta_description": {
+      "type": "text"
     }
   }
 }

@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "configurations",
+  "info": {
+    "singularName": "configuration",
+    "pluralName": "configurations",
+    "displayName": "Configuration"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "c_maintenance": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "c_construction": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

@@ -4,9 +4,9 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "develop": "react-scripts start",
-    "start": "serve -s build -l $PORT",
-    "build": "strapi build",
+    "develop": "strapi develop",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "strapi": "strapi"
   },
   "dependencies": {

@@ -1,5 +1,5 @@
 {
-  "name": "be-late",
+  "name": "be-biztown",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -11,17 +11,14 @@
   },
   "dependencies": {
     "@bn-digital/strapi-plugin-field-uuid": "^1.2.12",
-    "@strapi/plugin-graphql": "^4.15.4",
     "@strapi/plugin-i18n": "4.15.4",
     "@strapi/plugin-users-permissions": "4.15.4",
     "@strapi/provider-upload-cloudinary": "4.15.4",
     "@strapi/strapi": "4.15.4",
     "pg": "8.11.3",
-    "pg-connection-string": "^2.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^5.3.4",
-    "strapi-auto-uuid": "^0.0.7",
     "styled-components": "^5.3.11"
   },
   "author": {
@@ -30,8 +27,8 @@
   "strapi": {
     "uuid": "35d7a084-3088-4d0b-869e-f503693ee8e5"
   },
- "engines": {
+  "engines": {
     "node": "20"
- },
+  },
   "license": "MIT"
 }
